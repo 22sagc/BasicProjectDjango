@@ -20,15 +20,16 @@
                 <th>Age</th>
                 <th>Gender</th>
             </tr>
+            {% for i in patientObj%}
             <tr>
-                {% for i in patientObj%}
                     <td align="center">{{i.name}}</td>
                     <td align="center">{{i.mobile}}</td>
                     <td align="center">{{i.address}}</td>
                     <td align="center">{{i.age}}</td>
                     <td align="center">{{i.gender}}</td>
-                {% endfor %}
+
             </tr>
+            {% endfor %}
         </table>
     </div>
 </body>
