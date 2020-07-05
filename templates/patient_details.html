@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Details</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Patient Details</h1>
+    </div>
+    <div align="right">
+        <a href="/webapp/patient-registrations-landing/">Registration Page</a>
+    </div><br><br>
+    <div align="center">
+        <table align="center" width="100%" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Address</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                {% for i in patientObj%}
+                    <td align="center">{{i.name}}</td>
+                    <td align="center">{{i.mobile}}</td>
+                    <td align="center">{{i.address}}</td>
+                    <td align="center">{{i.age}}</td>
+                    <td align="center">{{i.gender}}</td>
+                {% endfor %}
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
