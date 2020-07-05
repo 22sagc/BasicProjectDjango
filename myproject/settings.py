@@ -78,9 +78,9 @@ DATABASES = {
   'default': {
       'ENGINE': 'django.db.backends.mysql',
       'NAME': "patient",
-      'USER':'root',
-      'PASSWORD':'rootroot',
-      'HOST':'localhost',
+      'USER':'djangoproject',
+      'PASSWORD':'Djangoproject',
+      'HOST':'database-1.crqevcp63fir.ap-south-1.rds.amazonaws.com',
       'PORT':'3306',
       'TIME_ZONE': 'Asia/Kolkata',
   }
